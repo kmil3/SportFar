@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./fontawesome-pro/font-awesome.css">
+
+    <!-- Estilização -->
+    <link rel="stylesheet" href="./css/global-colors.css">
+    <link rel="stylesheet" href="./css/landing-page.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Navegação -->
+    <header class="position-fixed w-100 p-3 d-flex align-items-center justify-content-center" style="z-index: 10;">
+        <div class="navi-shadow w-100">
+            <div class="navi-box w-100 h-100 d-flex align-items-center px-8">
+                <div class="me-auto">
+                    <img src="./images/logo.png" alt="" width="160">
+                </div>
+                <div class="d-md-flex d-none gap-4">
+                    <a href="#home" class="black-link">
+                        <p class="mb-0">Início</p>
+                    </a>
+                    <a href="#about" class="black-link">
+                        <p class="mb-0">Sobre nós</p>
+                    </a>
+                    <a href="#services" class="black-link">
+                        <p class="mb-0">Recursos</p>
+                    </a>
+                    <a href="#contact" class="black-link">
+                        <p class="mb-0">Contato</p>
+                    </a>
+                </div>
+                <div class="d-md-flex d-none ms-auto align-items-center justify-content-center">
+                    <a class="black-link me-2" href="./login.html">
+                        <p class="mb-0">Cadastrar-se</p>
+                    </a>
+                    <div class="h-line me-2"></div>
+                    <button type="button" class="position-relative d-flex align-items-center justify-content-center btn main-btn " style="border-radius: 11px;">
+                        <div class="btn-hover"></div>
+                        <p class="mb-0">Login</p>
+                    </button> 
+                </div>
+                <div class="d-flex d-md-none me-2 open-btn-menu">
+                    <i class="fa-regular fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="menu p-3 position-fixed h-100" style="z-index: 1030; ">
+        <div class="menu-shadow">
+            <div class="menu-header p-3 position-relative">
+                <div class="p-2 position-absolute close-btn-menu">
+                    <i class="fa-regular fa-xmark"></i>
+                </div>
+                <div>
+                    <img src="./images/logo.png" alt="" width="152">
+                    <hr>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <a href="#home" class="black-link">
+                        <p class="mb-0">Início</p>
+                    </a>
+                    <a href="#about" class="black-link">
+                        <p class="mb-0">Sobre nós</p>
+                    </a>
+                    <a href="#services" class="black-link">
+                        <p class="mb-0">Recursos</p>
+                    </a>
+                    <a href="#contact" class="black-link">
+                        <p class="mb-0">Contato</p>
+                    </a>
+                    <hr>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <a class="black-link me-2" href="./login.html">
+                        <p class="mb-0">Cadastrar-se</p>
+                    </a>
+                    <button type="button" class="position-relative d-flex align-items-center justify-content-center btn main-btn " style="border-radius: 11px;">
+                        <div class="btn-hover"></div>
+                        <p class="mb-0">Login</p>
+                    </button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <section class="bg-half-170 d-table w-100 bg-soft-primary" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="title-heading me-lg-5">
+                        <h1 class="heading fw-bold text-dark mb-3"><span class="text-primary">IFRS</span> Farroupilha  
+                            <br>Lorem Ipsum</h1>
+                        <p class="para-desc text-muted title-dark">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
+                        <div class="d-flex">
+                            <button type="button" class="mt-4 position-relative d-flex align-items-center justify-content-center btn main-btn ">
+                                <div class="btn-hover"></div>
+                                <p class="mb-0">Entrar</p>
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-relative col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="about-right">
+                        <div class="position-relative shadow p-2 rounded bg-white img-one">
+                            <a href="images/phoenix-600x800.png" class="lightbox" title="">
+                                <img src="images/phoenix-600x800.png" class="img-fluid  rounded" alt="">
+                            </a>
+                            <div class="position-absolute top-0 end-0" style="z-index: -1; top: -50px !important; ">
+                                <img src="images/svg/dots.svg" class="avatar avatar-xl-large" alt="">
+                            </div>
+                        </div>
+                        <div class="img-two">
+                            <div class="tiny-one-item">
+                                <div class="tiny-slide">
+                                    <div class="m-2">
+                                        <div class="shadow rounded-3 overflow-hidden p-2 bg-white">
+                                            <a href="images/phoenix-1200x750.png" class="lightbox" title="">
+                                                <img src="images/phoenix-1200x750.png" class="img-fluid rounded-3" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/decoration.png" alt="" class="start-0 position-absolute opacity-50 w-100" style="top: 30%; z-index: -1;">
+    </section>
+
+    <section class="section py-100" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="section-title mb-4 pb-2 d-flex flex-column align-items-center">
+                        <h2 class="title mb-3 text-center" style="max-width: 90%; font-size: 42px !important;">
+                            Subtitulo para chamar a atenção do leitor para a  escrita abaixo
+                        </h2>
+                        <p class="text-muted para-desc mb-0 text-center" style="font-size: 20px;"> 
+                            Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, 
+                            seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. 
+                            Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. 
+                            Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, 
+                            fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-200">
+        <div class="brand-style-one-items">
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="title-heading me-lg-5">
+                    <h1 class="heading fw-bold text-white mb-3 font-montserrant text-center"><span class="text-primary">IFRS </span> Farroupilha</h1>
+                    <p class="para-desc text-muted title-dark">Adicionar texto descritivo aqui para chamar a atenção do leitor</p>
+                </div>
+                <button type="button" class="position-relative d-flex align-items-center justify-content-center btn main-btn " style="border-radius: 11px;">
+                    <div class="btn-hover"></div>
+                    <p class="mb-0">Login</p>
+                </button> 
+            </div>
+        </div>
+        <img src="./images/15.png" alt="" width="200px" class="position-absolute end-0">
+    </section>
+
+    <div id="services" class="py-200 default-padding bottom-less text-center software-style-one-area " style="background-image:url(./images/17.png); background-position: center; background-repeat: no-repeat; background-size: 100% 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 mt-60 mt-xs-0">
+                    <div class="site-heading text-center">
+                        <h5 class="sub-heading">Services</h5>
+                        <h2 class="title">Features designed for you</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="services-more row ">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="item"><i class="fa-thin fa-chart-user"></i>
+                        <h4>HOA Management Company Consulting</h4>
+                        <p>We provide a strategic HOA game plan to efficiently address compliance requirements, complete projects, and fulfill homeowner requests with speed and precision.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="item"><i class="fa-thin fa-file-invoice"></i>
+                        <h4>HOA Accounting Company Services</h4>
+                        <p>Accurate financials are key to any HOA's success. Our expert accounting services cover balance sheets, P&amp;L statements, budget reports, cash flow, reconciliations, and accrued accounting based on service contracts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="item"><i class="fa-thin fa-messages"></i>
+                        <h4>Legal HOA Community Management</h4>
+                        <p>We collaborate with top HOA attorneys in the San Jose area and have extensive experience handling insurance claims and submissions, ensuring your community is protected and well-represented.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="item"><i class="fa-thin fa-envelopes-bulk"></i>
+                        <h4>State-of-the-Art Communication Dashboard</h4>
+                        <p>We’re the first to offer an innovative way to connect with your community. Whether reaching one homeowner or the whole neighborhood, we make communication easy. Manage projects, handle compliance, and send newsletters—all in one place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-100">
+        <div class="container mt-100 mt-60" id="portfolio">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title ">
+                        <h6 class="text-primary fw-medium mb-2">Case Studies </h6>
+                        <h4 class="title mb-3">Texto alternativo. texto alternativo</h4>
+                        <p class="text-muted para-desc mb-0" style="text-indent: 2em;">
+                            seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. 
+                            Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12">
+                            <img src="images/img-9.png" class="img-fluid rounded-3 custom-img" alt="work-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 50px;">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-5">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12">
+                            <div class="position-relative p-2" style="border-radius: 1rem 5rem 1rem 3rem;">
+                                <img src="images/img-8.png" class="img-fluid" alt="" style="border-radius: 1rem 5rem 1rem 3rem;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title ms-lg-5">
+                        <h4 class="title mb-3">IFRS - Texto alternativo</h4>
+                        <p class="text-muted para-desc mb-0" style="text-indent: 2em;">
+                            seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. 
+                            Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-100 mt-60">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title ">
+                        <h4 class="title mb-3">IFRS - Texto alternativo</h4>
+                        <p class="text-muted para-desc mb-0" style="text-indent: 2em;">
+                            seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. 
+                            Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="mt-4 position-relative d-flex align-items-center justify-content-center btn main-btn ">
+                                <div class="btn-hover"></div>
+                                <p class="mb-0">Entrar</p>
+                            </button> 
+                        </div>
+                    <br><br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12 text-end">
+                            <img src="images/img-10.png" class="img-fluid rounded-3 custom-img" alt="work-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-footer mt-100 ">
+        <div class="container">
+            <div class="footer-py-60 ">
+                <div class="row">
+                    <div class="col-lg-5 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer">
+                            <img src="images/logo-white.png" alt="" width="300px">
+                        </a>
+                        <hr>
+                        <p class="mt-4 text-white">IFRS - Adicionar texto  para chamar a atenção do leitor para o tema abordado no topico</p>
+                        <button type="button" class="mt-4 position-relative d-flex align-items-center justify-content-center btn main-btn ">
+                            <div class="btn-hover"></div>
+                            <p class="mb-0">Entrar</p>
+                        </button> 
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="footer-head font-montserrant text-white">IFRS</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="#home" class="text-white">     RS</a></li>
+                            <li><a href="#about" class="text-white">    IFRS</a></li>
+                            <li><a href="#services" class="text-white"> Farroupilha</a></li>
+                            <li><a href="#contact" class="text-white">  IFRS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="footer-head font-montserrant text-white">IFRS - Texto alternativo</h5>
+                        <div class="d-flex mt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone  fea icon-sm text-white mt-1 me-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <a href="tel:5102889412" class="text-white">NUMERO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-py-30 footer-bar ">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <p class="mb-0 text-white">IFRS - TEXTO ALTERNATIVO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/landing-page.js"></script>
+</body>
+</html>

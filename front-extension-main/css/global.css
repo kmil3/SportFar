@@ -1,0 +1,36 @@
+/* espa'camento global do site */
+.px-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.px-8 {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+/* btn global do site */
+.main-btn {
+    overflow: hidden;
+    background-color: var(--main-color);
+}
+
+.main-btn .btn-hover {
+    transition: 0.4s ease-in all;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+.main-btn:hover .btn-hover {
+    width: 140%;
+    background-color: #37d7528f;
+}
+
+.main-btn p {
+    z-index: 10;
+    color: white;
+    font-weight: 700 !important;
+}

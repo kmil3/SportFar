@@ -1,0 +1,179 @@
+
+/* CSS Global */
+body {
+    background-image: linear-gradient(45deg, var(--second-color), var(--main-color));
+    overflow-x: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6, body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.l-spacing-2{
+    letter-spacing:0.28px;
+}
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+a { 
+    color: #312f2f;
+    font-size: 12px;
+    font-weight: 800 ;
+    margin-left: 4px;  
+    transition: 0.2s ease-in-out all;
+}
+
+a:hover { 
+    color: var(--main-color);
+}
+
+/* Bloco Principal */
+.main-block.login {
+    overflow-x: hidden;
+    min-height: 532px;
+}
+
+/* Login-box */
+.login-box {
+    background-color: white;
+    width: 350px;
+    height: fit-content;
+    box-shadow: 0px 0px 20px #f3f3f3;
+}
+
+.login-box p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.login-box h4{
+    font-weight: 600;
+}
+
+.login-box input, .login-box button{
+    height: 36px;
+}
+
+.login-box input{
+    color: #818181;
+    background-color: #2d82d61c;
+    box-shadow: 0px 0px 20px #f3f3f3;
+    border: 0px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.login-box .subtitle{
+    color: var(--subtitle-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.login-box .info-subtitle{
+    font-size: 12px;
+    color: var(--subtitle-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.login-box .info-link{
+    font-size: 10px;
+}
+
+.form-control:focus {
+    color: #818181;
+    background-color: #2d82d60f;
+    border-color: var(--border-color);
+    outline: 0;
+    box-shadow: 0px 0px 20px #f3f3f3;
+}
+
+.password-icon.fa-eye {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+}
+
+.password-icon.fa-eye-slash {
+    position: absolute;
+    right: 7px;
+    bottom: 10px;
+}
+
+/* Media-login-box */
+
+@media screen and (max-width: 390px){
+    .login-box {
+        width: calc(100vw - 40px);
+    }
+}
+
+@media screen and (max-height: 550px){
+    .main-block.register {
+        overflow-x: hidden;
+        min-height: 732px;
+    }
+    
+}
+
+/* Pag Erro 404 */
+
+.block-404 h1{
+    font-weight: 800;
+    font-size: 112px;
+    color: white;
+} 
+
+.block-404 p{
+    font-weight: 250;
+    font-size: 30px;
+    color: white;
+} 
+
+@media screen and (max-width: 768px) {
+    .block-404 > div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        min-height:532px;
+    }
+
+    .block-404 h1 {
+        font-weight: 800;
+        font-size: calc(10vw + 10px); 
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .block-404 p {
+        font-size: calc(4vw + 5px); 
+    }
+
+    .block-404 img {
+        margin: 20px 0;
+        width: calc(100vw - 40px);
+        max-width: 500px; 
+    }
+}
+
+@media screen and (max-height: 768px){
+
+
+    .block-404 h1 {
+        font-weight: 800;
+        font-size: 56px;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .block-404 p {
+        font-size: 36px; 
+    }
+
+    .block-404 img { 
+        max-height: 428px;
+        max-width: none;
+        width: auto;
+    }
+}
