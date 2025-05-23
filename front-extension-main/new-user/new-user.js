@@ -30,7 +30,26 @@ new Vue({
       }
     },
     salvarFormulario() {
+      const cpf = this.form.cpf.replace(/\D/g, ''); 
+      const celular = this.form.celular.replace(/\D/g, '');
+      const cep = this.form.cep.replace(/\D/g, '');
+      const numero = this.form.numero;
+    
+      if (cpf.length !== 11 || !/^\d+$/.test(cpf)) {
+        alert('CPF inválido!');
+        return;
+      } else if (!/^\d+$/.test(celular)) {
+        alert('Celular inválido!');
+        return;
+      } else if (cep.length !== 8 || !/^\d+$/.test(cep)) {
+        alert('CEP inválido!');
+        return;
+      } else if (numero.length === 0 || !/^\d+$/.test(numero)) {
+        alert('Número inválido!');
+        return;
+      }
+    
       alert('Dados salvos com sucesso!');
     }
-  }
+}
 });
