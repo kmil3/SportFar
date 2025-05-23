@@ -33,14 +33,14 @@
       <div class="form-sections">
         <!-- Dados Pessoais -->
         <section>
-          <h3>Dados pessoais</h3>
+          <h3>Dados pessoais do responsável</h3>
           <div class="field">
             <label>Nome:</label>
-            <input type="text" v-model="form.nome">
+            <input type="text" v-model="form.nome" placeholder="Nome completo">
           </div>
           <div class="field">
             <label>Nascimento:</label>
-            <input type="date" v-model="form.nascimento">
+            <input type="date" v-model="form.nascimento" placeholder="dd/mm/aaaa">
           </div>
           <div class="field">
             <label>CPF:</label>
@@ -52,19 +52,21 @@
           </div>
         </section>
 
+        <hr>
+
         <section>
           <h3>Endereço</h3>
           <div class="field">
             <label>Rua:</label>
-            <input type="text" v-model="form.rua">
+            <input type="text" v-model="form.rua" placeholder="Nome da rua">
           </div>
           <div class="field">
             <label>Número:</label>
-            <input type="text" v-model="form.numero">
+            <input type="text" v-model="form.numero" placeholder="Número da casa">
           </div>
           <div class="field">
             <label>Bairro:</label>
-            <input type="text" v-model="form.bairro">
+            <input type="text" v-model="form.bairro" placeholder="Nome do bairro">
           </div>
           <div class="field">
             <label>CEP:</label>
@@ -72,22 +74,25 @@
           </div>
           <div class="field">
             <label>Cidade:</label>
-            <input type="text" v-model="form.cidade">
+            <input type="text" v-model="form.cidade" placeholder="Nome da cidade">
           </div>
         </section>
+
+        <hr>
 
         <section>
           <h3>Login</h3>
           <div class="field">
             <label>E-mail:</label>
             <input type="email" v-model="form.email" placeholder="email@dominio.com">
-            <small>Você receberá uma senha temporária por e-mail!</small>
+            <small class="aviso"> Você receberá uma senha temporária por e-mail!</small>
           </div>
+          <button class="btn-adicionar">
+            <i class="fas fa-plus-circle"></i> Adicionar dependente
+          </button>
         </section>
 
-        <button class="btn-adicionar">
-          <i class="fas fa-plus-circle"></i> Adicionar dependente
-        </button>
+
 
         <button class="btn-salvar" @click="salvarFormulario">
           Salvar

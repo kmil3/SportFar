@@ -72,6 +72,21 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3{
+  color: #2e7d32;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
 .form-header {
   display: flex;
   justify-content: space-between;
@@ -93,7 +108,7 @@ section {
 
 label {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 6px;
 }
 
@@ -141,14 +156,6 @@ input[type="file"] {
   display: none;
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .btn-upload {
   background-color: #e0e0e0;
 }
@@ -157,11 +164,15 @@ button {
   background-color: #2e7d32;
   color: white;
   margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-adicionar {
   display: flex;
-  align-items: center;
   background: none;
   border: none;
   font-weight: bold;
@@ -169,10 +180,18 @@ button {
   cursor: pointer;
   font-size: 16px;
   margin-top: 10px;
+  margin-left: -4px;
 }
 
 .btn-adicionar i {
   margin-right: 8px;
+}
+
+.aviso{
+  color: #696969cc;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 3px;
 }
 
 @media (max-width: 768px) {
