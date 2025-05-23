@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="new-student.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">SPORT<span>FAR</span></div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Visualizar</a>
+      <a href="#">Calendário</a>
+      <a href="#">Sobre</a>
+      <a href="#">Suporte</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+  </div>
+
+  <div id="app" class="container">
+    <form @submit.prevent="salvarFormulario">
+      <h2>Formulário para cadastro de usuário</h2>
+      <div class="form-header">
+        <div class="form-sections">
+          <!-- Dados Pessoais -->
+          <section>
+            <h3>Dados pessoais do aluno</h3>
+            <div class="field">
+              <label>Nome:</label>
+              <input type="text" v-model="form.nome" placeholder="Nome completo" required>
+            </div>
+            <div class="field">
+              <label>Nascimento:</label>
+              <input type="date" v-model="form.nascimento" placeholder="dd/mm/aaaa" required>
+            </div>
+            <div class="field">
+              <label>CPF:</label>
+              <input type="text" v-model="form.cpf" placeholder="000.000.000-00" required>
+            </div>
+          </section>
+
+          <hr>
+
+          <section>
+            <h3>Login</h3>
+            <div class="field">
+              <label>E-mail:</label>
+              <input type="email" v-model="form.email" placeholder="email@dominio.com" required>
+              <small class="aviso"> Você receberá uma senha temporária por e-mail!</small>
+            </div>
+          </section>
+
+          <button class="btn-salvar" type="submit">
+            Salvar
+          </button>
+        </div>
+
+      <div class="upload-box">
+        <div class="upload-preview">
+          <i class="fas fa-user" v-if="!fotoPreview"></i>
+          <img :src="fotoPreview" v-if="fotoPreview" alt="Preview">
+        </div>
+        <input type="file" id="fotoInput" @change="carregarFoto" accept="image/*">
+        <button type="button" class="btn-upload" @click="abrirUpload">
+          Selecionar imagem
+        </button>
+      </div>
+     </div>
+
+      </div>
+    </form>
+  </div>
+
+
+
+  <script src="new-student.js"></script>
+</body>
+</html>
